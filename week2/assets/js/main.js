@@ -1,3 +1,47 @@
+
+// function start(){
+//     for(let i = 0; i < 5; i++ ){
+//         console.log(i);
+//     }
+// }
+
+// start();
+
+// let age = 18;
+// if( age == 18){
+//     console.log('Im sorry but no');
+// } if(age > 21){
+//     console.log('Welcome');
+// }else{
+//     console.log('Whaaaaat?');
+// }
+
+
+// let number = Math.floor(Math.random() * 10);
+
+// switch(number){
+//     case(4):
+//     console.log('you rolled a four');
+//     break;
+
+//     case(5):
+//     console.log('you rolled a five');
+//     break;
+
+//     case(6):
+//     console.log('you rolled a six');
+//     break;
+
+//     default:
+//     console.log('this is another number');
+//     break;
+// }
+    
+
+
+
+
+
 /*
  * Original Code by Lucien Huang! 
  */
@@ -22,10 +66,34 @@ let images = [
     "tish.jpg"];
 
 
+    
 
 
+function loadImages(){
+    let imageNumber = 0;
 
+    let columns = document.getElementsByClassName('column');
+    // console.log(columns.length);
+    for( let i=0;  i < images.length; i++){
+        let newImg = document.createElement('img');
+        newImg.className = 'images';
+        newImg.id = i;
+        newImg.src = './assets/images/'+images[i];
 
+        columns[imageNumber].appendChild(newImg);
+        imageNumber++;
+
+        //every 3 colums, reset to 0
+        if(imageNumber > columns.length - 1){
+            imageNumber = 0;
+        }
+    }
+}
+
+document.addEventListener('DOMContentLoaded', function(){
+    console.log('JS is working!');
+    loadImages();
+});
 
 
 
