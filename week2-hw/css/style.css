@@ -1,0 +1,72 @@
+
+body{
+    background-image: linear-gradient(to bottom right, #907A56, #AA987D,#907A56 );
+    color: azure;
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+    font-weight: 300;
+    letter-spacing: 0.5px;
+}
+
+p{
+    vertical-align: top;
+    margin: 0;
+}
+
+
+h1{
+    text-align: center;
+}
+
+td{
+    padding: 0 20px 20px 0;
+    width: 45%;
+    vertical-align: top;
+}
+
+
+input:hover{
+    cursor: pointer;
+}
+
+table{
+    margin: auto;
+    padding:10px;
+}
+
+#container{
+    width: 60vw;
+    min-height: 80vh;
+    margin: auto;
+    margin-top: 30px;
+    /* background-color: rgb(255, 255, 255, 0.6); */
+    background-color: #AA987D;
+    box-shadow: 0px 15px 30px 0px #907A56;
+    padding: 20px;
+    position: relative;
+}
+
+.submitter{
+    position: absolute;
+    right: 50px;
+    
+}
+
+#submitButton{
+    background-color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    text-transform: uppercase;
+    letter-spacing: 0.6px;
+}
+
+#submitButton:hover{
+    box-shadow: 0px 5px 12px 0px #907A56;
+    cursor: pointer;
+    background-color: #907A56;
+    color: white;
+}
+
+.quizScore-block{
+    padding-top: 40px;
+}
