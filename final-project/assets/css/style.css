@@ -1,0 +1,162 @@
+*{
+    font-family: 'Open Sans', sans-serif;
+}
+
+
+/* CONTAINER */
+
+/* COLUMNS */
+.col2{
+    width: calc(80vw / 6) ;
+    display: inline-block;
+    background-color: blanchedalmond;
+}
+
+.col3{
+    width: calc(80vw / 4) ;
+    display: inline-block;
+    background-color: blanchedalmond;
+}
+
+.col4{
+    width: calc(80vw / 3) ;
+    display: inline-block;
+    background-color: blanchedalmond;
+}
+
+.col6{
+    width: calc(80vw / 2) ;
+    display: inline-block;
+    background-color: blanchedalmond;
+}
+
+.col8{
+    width: calc((80vw / 3) * 2) ;
+    display: inline-block;
+    background-color: blanchedalmond;
+}
+
+.col9{
+    width: calc((80vw / 4) * 3) ;
+    display: inline-block;
+    background-color: blanchedalmond;
+}
+
+.col10{
+    width: calc(((80vw / 3) * 2) + (80vw / 6)) ;
+    display: inline-block;
+    background-color: blanchedalmond;
+}
+
+.col12{
+    width: 80vw;
+    background-color: blanchedalmond;
+}
+
+
+/* GRID */
+#item1 {background: #37BC9B;}
+#item2 {background: #DA4453;}
+#item3 {background: #F6BB42;}
+#item4 {background: #3BAFDA;}
+#item5 {background: #4A89DC;}
+#item6 {background: #E9573F;}
+#item7 {background: #434A54;}
+#item8 {background: #D770AD;}
+#item9 {background: #8CC152;}
+#item10 {background: #967ADC;}
+#item11 {background: #E6E9ED; color: #333;}
+#item12 {background: #AAB2BD; color: #333;}
+
+/* FIXED HEADER */
+
+
+/* MEDIA QUERIES --------------------------------------- */
+
+
+/* desktop */
+@media screen and (min-width: 1050px) {
+
+	section .items{
+		width: calc(80vw/4);
+		height: calc(80vw/4);
+	}
+
+	header #desktop{
+		display: block;
+	}
+
+	header #mobile{
+		display: none;
+	}
+}
+
+
+@media screen and (min-width: 500px) and (min-device-width: 500px) and (max-width: 779px) {
+
+
+	section .items{
+		width: calc(80vw/2);
+		height: calc(80vw/2);
+	}
+
+	header #desktop{
+		display: block;
+	}
+
+	header #mobile{
+		display: none;
+	}
+}
+
+/* tablet */
+@media screen and (min-width: 780px) and (max-width: 1023px){
+
+
+	section .items{
+		width: calc(80vw/3);
+		height: calc(80vw/3);
+	}
+
+	header #desktop{
+		display: block;
+	}
+
+	header #mobile{
+		display: none;
+	}
+
+}
+
+/* FOR MOBILE DEVICES*/
+/* Source for different devices http://cssmediaqueries.com/target/ */
+@media screen and (max-device-width: 500px) and (orientation: portrait){
+
+
+	section .items{
+		width: calc(80vw/2);
+		height: calc(80vw/2);
+	}
+
+	header #desktop{
+		display: none;
+	}
+
+	header #mobile{
+		display: block;
+	}
+}
+
+.middleLine{
+    width:50%;
+}
+
+/* seems to be a difference between Android and iOS, device-width and device-height changes with orientation*/
+@media screen and (max-device-width: 500px) and (orientation: landscape){
+	section .items{
+		width: calc(80vw/3);
+		height: calc(80vw/3);
+	}
+}
+
+
