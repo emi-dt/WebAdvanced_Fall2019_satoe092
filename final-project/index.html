@@ -9,81 +9,124 @@
 
 
     <!-- Font -->
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- JS -->
+	<script type="text/javascript" src="assets/js/main.js"></script>
+	<script type="text/javascript" src="assets/js/jquery-3.4.1.min.js"></script>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 
 </head>
 <body>
-
-    <div id="mySideNav" class="sideNav">
-            <span id="closeIcon">&times;</span>
-    </div>
+ 
     
-    <div id="home">
-        <div class="ham-container">
-        <span class="hamberguer">&#9776;</span></div>
-    </div>
-
     
 
-    <div class="menubar" id="nav"> 
-        <nav>
-            <li><a class="submenu link1" href="#secAbout" tabindex="1">About</a></li>
-            <li><a class="submenu link2" href="work.html" tabindex="1">Work</a></li>     
-        </nav>
+    <div id="ham-container">
+        <div id="mySideNav" class="sideNav">
+                <span id="closeIcon" onclick="closeNav()">&times;</span>
+        </div>
+
+        <span class="hamberguer" onclick="openNav()">&#9776;</span>
+        <div class="logo"><a href="index.html"><img src="/assets/images/free-wizard-glasses.svg"></a></div>   
+    </div>
+
+    
+
+    <div id="navbar"> 
+            <li><a class="submenu a-underline link1" href="#secAbout" tabindex="1">About</a></li>
+            <li><a class="submenu a-underline link2" href="work.html" tabindex="1">Work</a></li>  
+            <li class="logo"><a href="index.html"><img src="/assets/images/free-wizard-glasses.svg"> </a></li> 
     </div>
     
     <div class="main-contianer">
         <div class="secHero">
             <div class="heroText">
-                <h1 class="big-text">Emi is a product designer fascinated by the future of technology and its potential to do good in the world.</h1>
+                <h1 class="big-text">Emi is a product designer fascinated by <span class="highlightYellow"> future of technology</span> and its potential to do good in the world.</h1>
                 <h2 class="secondBig-text">She believes great design comes from a focus on the right questions, not the right answers.</h2>
-                <a>Read more →</a>
+                <a class="a-underline" href="#about">Read more →</a>
             </div>
         </div>
 
-        <div class="work-top3">
-            <div id="item1" class="items">Item 1</div>
-            <div id="item2" class="items">Item 2</div>
-            <div id="item3" class="items">Item 3</div>
+        <div id="work-top3">
+            <a src=""><div id="item1" class="items">
+                <div class="work-top3-content">
+                    <div class="col2" >
+                    <img class="w-top3-img" src="assets/images/placeholder.webp" alt="placeholder">
+                    </div>
+                    <div class="col2 project-cont-one" id="projectOne">
+                        <h2 class="secondBig-text">Project Title</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illo commodi mollitia molestias asperiores praesentium laudantium. Eos totam incidunt eum consequatur dolorum, accusantium, saepe sequi unde veniam quis, praesentium cupiditate assumenda.</p>
+                        <a class="a-underline" href="">Read more →</a>
+                    </div>
+                </div>
+            </div></a>
+
+            <a src=""><div id="item2" class="items">
+                <div class="work-top3-content">
+                    <div class="col2" >
+                    <img class="w-top3-img" src="assets/images/placeholder.webp" alt="placeholder">
+                    </div>
+                    <div class="col2 project-cont-two">
+                        <h2 class="secondBig-text">Project Title</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illo commodi mollitia molestias asperiores praesentium laudantium. Eos totam incidunt eum consequatur dolorum, accusantium, saepe sequi unde veniam quis, praesentium cupiditate assumenda.</p>
+                        <a class="a-underline" href="">Read more →</a>
+                    </div>
+                </div>
+            </div></a>
+
+            <a src=""><div id="item3" class="items">
+                <div class="work-top3-content">
+                    <div class="col2" >
+                    <img class="w-top3-img" src="assets/images/placeholder.webp" alt="placeholder">
+                    </div>
+                    <div class="col2 project-cont-three">
+                        <h2 class="secondBig-text">Project Title</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illo commodi mollitia molestias asperiores praesentium laudantium. Eos totam incidunt eum consequatur dolorum, accusantium, saepe sequi unde veniam quis, praesentium cupiditate assumenda.</p>
+                        <a class="a-underline" href="">Read more →</a>
+                    </div>
+                </div>
+            </div></a>
+
             <div id="secMore">
-                <div class="button">more work</div>
-                <hr class="middleLine">
+                <div class="button btnOne">more work</div>
+                <div class="middleLine"></div>
             </div>
         </div>
 
         <div id="about">
-            <div class="col6">
-                <h1 class="bigText">Hello I’m Emi.</h1>
-                <p>Grow ON is about rejuvenating the organic farming industry in Ontario. It is vital to sustain our local food supply. GrowON’s strategy makes information about organic farming more accessible, approachable and attractive to younger generations. </p>
-                <p>Download VC</p>
-                <div class="col3">
-                    <p>email</p>
-                    <p>946 674 832</p>
+            <div class="about-content">
+                <div class="col2 alignTop about-text">
+                    <h1 class="bigText">Hello I’m Emi.</h1>
+                    <p class="about-emi">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illo commodi mollitia molestias asperiores praesentium laudantium. Eos totam incidunt eum consequatur dolorum, accusantium, saepe sequi unde veniam quis, praesentium cupiditate assumenda.</p>
+                    <a class="a-underline">Download VC</a>
+
+                    <div class="contact">
+                        <div class="col2 alignTop">
+                        <p>emisato02@gmail.com</p>
+                        <p>946 674 832</p>
+                        </div>
+                        <div class="col2 socialMedia">
+                        <!-- Icon from fontawesome    https://www.w3schools.com/icons/fontawesome_icons_brand.asp -->
+                        <a href="https://www.behance.net/EmiSato" class="fa fa-behance socialbtns" target="_blank"></a>
+                        <a href="https://www.linkedin.com/in/emi-s-542518174/" class="fa fa-linkedin socialbtns" target="_blank"></a>
+                        </div>
+                    </div>
                 </div>
-                <div class="col3 socialMedia">
-                <!-- Icon from fontawesome    https://www.w3schools.com/icons/fontawesome_icons_brand.asp -->
-                    <i class="fa fa-behance"></i>
-                    <i class="fa fa-linkedin"></i>
+
+                <div class="col2" style="height:400px; background-color: cadetblue;">
                 </div>
             </div>
 
-            <div class="col6"></div>
-
         </div>
+    <!-- copyright symbol -->
+    <footer>&copy; Emi Sato 2019</footer>  
 
+    </div> 
 
-
-
-    </div>
-
-
-
-
-
-
-
-</div>
-
-</body>
+</body> 
 </html>
