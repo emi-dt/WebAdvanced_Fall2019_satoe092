@@ -1,6 +1,54 @@
+/*Font notes - SF UI Display
+.bold{font-family: font92682; }
+.regular{font-family: font92685;}
+.light{font-family: font92723; }*/
+/** Ultra Light */
+@font-face {
+    font-family: "San Francisco";
+    font-weight: 100;
+    src: url("https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-ultralight-webfont.woff");
+}
+
+/** Thin */
+@font-face {
+    font-family: "San Francisco";
+    font-weight: 200;
+    src: url("https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-thin-webfont.woff");
+}
+
+/** Regular */
+@font-face {
+    font-family: "San Francisco";
+    font-weight: 400;
+    src: url("https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-regular-webfont.woff");
+}
+
+/** Medium */
+@font-face {
+    font-family: "San Francisco";
+    font-weight: 500;
+    src: url("https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-medium-webfont.woff");
+}
+
+/** Semi Bold */
+@font-face {
+    font-family: "San Francisco";
+    font-weight: 600;
+    src: url("https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-semibold-webfont.woff");
+}
+
+/** Bold */
+@font-face {
+    font-family: "San Francisco";
+    font-weight: 700;
+    src: url("https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-bold-webfont.woff");
+}
+
+
 *{
-    font-family: 'Open Sans', sans-serif;
+    font-family: "San Francisco", 'Open Sans', sans-serif;
     color: #555;
+    letter-spacing: 1px;
     margin: 0;
 }
 
@@ -20,6 +68,7 @@ li{
 
 .highlightYellow{
     background-color: yellow;
+    font-family: 'Open Sans', sans-serif;
 }
 
 .a-underline{
@@ -75,7 +124,7 @@ footer{
 /* BEHAVIOR & ANIMATION EFFECT*/
 .project-cont-one, .project-cont-two , .project-cont-three, .btnOne, .about-text {
     opacity: 0;
-    transition: opacity 0.5s;
+    transition: all 0.5s;
     transform: 1s;
     margin-bottom: 4px;
 }
@@ -151,6 +200,7 @@ footer{
 
 .big-text{
     font-size: 3em;
+    font-family: 'Open Sans', sans-serif;
 }
 
 .secondBig-text{
@@ -328,7 +378,13 @@ footer{
 	color: white;
 	display: block;
 	padding: 10px;
-	margin-top: 30px;
+    margin-top: 30px;
+    opacity: 0;
+    transition: 0.3s;
+}
+
+.sideNav.openMenu a{
+    opacity: 1;
 }
 
 .sideNav a:hover{
@@ -399,6 +455,7 @@ color: gold;
     height: 55px;
     /* padding-top: 15px; */
     background-color: #f8f7fb;
+    transition: all 0.3s;
 }
 
 #ham-container .logo{
@@ -568,6 +625,7 @@ color: gold;
 @media screen and (min-width: 768px) and (max-width: 1024px) and (orientation: portrait){
     #ham-container{
         display: block;
+        position: fixed;
     }
 
     #navbar{
@@ -595,6 +653,7 @@ color: gold;
 
     #ham-container{
         display: block;
+        position: fixed;
     }
 
     #ham-container .logo {

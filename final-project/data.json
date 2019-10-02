@@ -1,0 +1,42 @@
+
+{"data":[
+    {
+    "title":"Project 01",
+    "id": "item1",
+    "content":{
+        "cont-class":"project-cont-one",
+        "image":"./assets/images/placeholder.webp",
+        "url":"project1.html",
+        "parragraph":"Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illo commodi mollitia molestias asperiores praesentium laudantium. Eos totam incidunt eum consequatur dolorum, accusantium, saepe sequi unde veniam quis, praesentium cupiditate assumenda."
+        }
+
+    },
+
+    {
+    "title":"Project 02",
+    "id": "item2",
+    "content":{
+        "cont-class":"project-cont-two",
+        "image":"./assets/images/placeholder.webp",
+        "url":"project2.html",
+        "parragraph":"Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illo commodi mollitia molestias asperiores praesentium laudantium. Eos totam incidunt eum consequatur dolorum, accusantium, saepe sequi unde veniam quis, praesentium cupiditate assumenda."
+    }
+
+    },
+
+    {
+    "title":"Project 03",
+    "id": "item3",
+    "content":{
+        "cont-class":"project-cont-three",
+        "image":"./assets/images/placeholder.webp",
+        "url":"project3.html",
+        "parragraph":"Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illo commodi mollitia molestias asperiores praesentium laudantium. Eos totam incidunt eum consequatur dolorum, accusantium, saepe sequi unde veniam quis, praesentium cupiditate assumenda."
+    }
+
+    }
+    ]
+}
+
+
+

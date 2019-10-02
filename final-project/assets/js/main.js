@@ -4,6 +4,8 @@ window.addEventListener('DOMContentLoaded', function(){
     let navOffset = $("#navbar").offset().top;
     console.log(navOffset);
 
+    loadData();
+
     $(window).scroll(function(){
         let scrollPos = $(window).scrollTop();
         console.log(scrollPos);
@@ -114,7 +116,7 @@ let currentScrollPos = window.pageYOffset;
 
 
 // Hamberger Navbar Down
-window.onscrollHam = function() {
+window.onscroll = function() {
     let currentScrollPos = window.pageYOffset;
     
       if (prevScrollpos > currentScrollPos) {
@@ -124,3 +126,23 @@ window.onscrollHam = function() {
       }
       prevScrollpos = currentScrollPos;
     }
+
+
+
+
+// Handle Bar
+function loadData(){
+    $.getJSON("../data.json", function(data){
+        // console.log(data);
+        generateWork(data);
+    });
+}
+
+function generateWork(data){
+    let source = $("#work-template").html();
+    let template = Handlebars.compile(source);
+    let result = template(data);
+    let list = $("#work-top3");
+
+    list.append(result);
+}

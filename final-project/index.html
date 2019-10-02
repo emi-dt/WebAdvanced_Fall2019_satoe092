@@ -20,6 +20,10 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 
+    <!-- Handlebars -->
+    <script type='text/javascript' src='assets/js/handlebars.js'></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.3.1/handlebars.min.js"></script>
+
 </head>
 <body>
  
@@ -53,20 +57,31 @@
         </div>
 
         <div id="work-top3">
-            <a src=""><div id="item1" class="items">
-                <div class="work-top3-content">
-                    <div class="col2" >
-                    <img class="w-top3-img" src="assets/images/placeholder.webp" alt="placeholder">
+            <script id="work-template" type="x-handlebars-template">​
+            {{#each data}}
+                <a href="{{content.url}}"><div id="{{id}}" class="items">
+                    <div class="work-top3-content">
+                        <div class="col2" >
+                        <img class="w-top3-img" src="{{content.image}}" alt="placeholder">
+                        </div>
+                        <div class="col2 {{content.cont-class}}" id="projectOne">
+                            <h2 class="secondBig-text">{{title}}</h2>
+                            <p>{{content.parragraph}}</p>
+                            <a class="a-underline" href="{{content.url}}">Read more →</a>
+                        </div>
                     </div>
-                    <div class="col2 project-cont-one" id="projectOne">
-                        <h2 class="secondBig-text">Project Title</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illo commodi mollitia molestias asperiores praesentium laudantium. Eos totam incidunt eum consequatur dolorum, accusantium, saepe sequi unde veniam quis, praesentium cupiditate assumenda.</p>
-                        <a class="a-underline" href="">Read more →</a>
-                    </div>
-                </div>
-            </div></a>
+                </div></a>
+            {{/each}}
+            </script> 
+        </div>
 
-            <a src=""><div id="item2" class="items">
+            <div id="secMore">
+                    <div class="button btnOne">more work</div>
+                    <div class="middleLine"></div>
+            </div>
+
+
+            <!-- <a src=""><div id="item2" class="items">
                 <div class="work-top3-content">
                     <div class="col2" >
                     <img class="w-top3-img" src="assets/images/placeholder.webp" alt="placeholder">
@@ -90,13 +105,9 @@
                         <a class="a-underline" href="">Read more →</a>
                     </div>
                 </div>
-            </div></a>
+            </div></a> -->
 
-            <div id="secMore">
-                <div class="button btnOne">more work</div>
-                <div class="middleLine"></div>
-            </div>
-        </div>
+
 
         <div id="about">
             <div class="about-content">
