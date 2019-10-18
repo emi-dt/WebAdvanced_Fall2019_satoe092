@@ -45,17 +45,92 @@
 }
 
 
+
+/*Font notes - Europa */
+/* Europa-Bold Bold
+
+font-family: europa, sans-serif;
+
+font-weight: 700;
+
+font-style: normal;
+
+
+Europa-Light Light
+
+font-family: europa, sans-serif;
+
+font-weight: 300;
+
+font-style: normal;
+
+
+Europa-Regular Regular
+
+font-family: europa, sans-serif;
+
+font-weight: 400;
+
+font-style: normal;
+
+
+Europa-Light LightItalic
+
+font-family: europa, sans-serif;
+
+font-weight: 300;
+
+font-style: italic;
+
+
+Europa-Regular RegularItalic
+
+font-family: europa, sans-serif;
+
+font-weight: 400;
+
+font-style: italic;
+
+
+Europa-Bold BoldItalic
+
+font-family: europa, sans-serif;
+
+font-weight: 700;
+
+font-style: italic; */
+
+
+
 *{
     font-family: "San Francisco", 'Open Sans', sans-serif;
-    color: #555;
-    letter-spacing: 1px;
+    /* color: #555; */
     margin: 0;
 }
+
+p{
+    font-size: 15.8px;
+    line-height: 20px;
+}
+
+h1, h2 {
+    font-family: europa, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.big-text .highlightYellow{
+    font-family: europa, sans-serif;
+    font-weight: 700;
+    font-style: normal; 
+    font-size: 1.2em;
+}
+
 
 a{
     text-decoration: none;
     cursor: pointer;
-    
+    color: inherit; 
 }
 
 a:hover{
@@ -68,20 +143,64 @@ li{
 
 .highlightYellow{
     background-color: yellow;
-    font-family: 'Open Sans', sans-serif;
+    /* font-family: 'Open Sans', sans-serif; */
 }
+
 
 .a-underline{
     text-underline-position: below;
     text-decoration: underline;
-    transition: 0.3;
+    transition: all 0.3;
     cursor: pointer;
-    color: #333;
+    
 }
 
 .a-underline:hover{
     background-color: yellow;
     text-decoration: none;
+    color: #333;
+}
+
+.a-noLine{
+    transition: all 0.3;
+    cursor: pointer;
+}
+
+.a-noLine:hover{
+    background-color: yellow;
+    text-decoration: none;
+    color: #333;
+}
+
+.active{
+    text-underline-position: below;
+    text-decoration: underline;
+    transition: all 0.3;
+}
+
+/* Wave hand emoji! https://jarv.is/notes/css-waving-hand-emoji/ */
+span.wave {
+    animation-name: wave-animation;
+    animation-duration: 2.5s;
+    animation-iteration-count: infinite;
+    transform-origin: 70% 70%;
+    display: inline-block;
+  }
+  
+  @keyframes wave-animation {
+      0% { transform: rotate(  0.0deg) }
+     10% { transform: rotate(-10.0deg) }
+     20% { transform: rotate( 12.0deg) }
+     30% { transform: rotate(-10.0deg) }
+     40% { transform: rotate(  9.0deg) }
+     50% { transform: rotate(  0.0deg) }
+    100% { transform: rotate(  0.0deg) }
+  }
+
+.secHero{
+    height: 100%;
+    display: flex;
+    align-items: center;
 }
 
 .middleLine{
@@ -114,25 +233,36 @@ li{
 }
 
 footer{
-    text-align: right;
-    margin-right: 10vw;
+    
+    margin-right: 15vw;
     margin-top: 100px;
     padding-bottom: 50px;
 }
 
+.copyright{
+    text-align: right;
+}
+
 
 /* BEHAVIOR & ANIMATION EFFECT*/
-.project-cont-one, .project-cont-two , .project-cont-three, .btnOne, .about-text {
+.btnOne, .about-content {
     opacity: 0;
+    transform: translateY(3em);
     transition: all 0.5s;
-    transform: 1s;
     margin-bottom: 4px;
+}
+
+.work-top3-content, .heroText{
+    opacity: 0;
+    transform: translateY(3em);
+    transition: all 0.5s;
+    margin-bottom: 0px;
 }
 
 .appear{
     opacity: 1;
     margin-bottom: 0px;
-    transform: translateY(-3em);
+    transform: translateY(0);
     -webkit-animation: fade-in .8s ease-out forwards;
     animation:fade-in .8s ease-out forwards;
 }
@@ -192,37 +322,36 @@ footer{
     margin: auto;
 }
 .heroText{
-    width: 50vw;
+    width: 40vw;
     padding-top: 20vh;
     margin-bottom: 15vh;
-    padding-left: 10vw;
+    padding-left: 15vw;
 }
 
 .big-text{
-    font-size: 3em;
-    font-family: 'Open Sans', sans-serif;
+    font-size: 2.4em;
+    /* font-family: 'Open Sans', sans-serif; */
 }
 
 .secondBig-text{
     font-weight: 400;
     margin-top: 5vh;
+    font-size: 2.2em;
 }
-
-
 
 .work-top3-content{
-    padding-left: 10vw;
-    padding-right: 10vw;
+    padding-left: 15vw;
+    padding-right: 15vw;
     padding-top: 5vh;
-    color: #f8f7fb
+    /* color: #f8f7fb */
 }
 
-.project-cont-one, .project-cont-two, .project-cont-three{
+/* .project-cont-one, .project-cont-two, .project-cont-three{
     margin-bottom: 5vh;
-}
+} */
 
 #projectOne{
-    color: #f8f7fb !important;
+    /* color: #f8f7fb; */
 }
 
 .work-top3-content .project-cont-sec{
@@ -231,6 +360,7 @@ footer{
 
 .w-top3-img{
     width: 80%;
+    padding-left: 20%;
 }
 
 .secondBig-text{
@@ -252,8 +382,8 @@ footer{
 }
 
 .about-content{
-    margin-left: 10vw;
-    margin-right: 10vw;
+    margin-left: 15vw;
+    margin-right: 15vw;
 }
 
 .about-emi{
@@ -265,6 +395,39 @@ footer{
     color: rgb(160, 160, 160);
 }
 
+.workCat{
+    padding-left: 15vw;
+    padding-top: 80px;
+    z-index: 1000;
+    position: relative;
+}
+
+.workCat li{
+    display: inline;
+    margin-right: 20px;
+}
+
+.reachOut{
+    padding-left: 15vw;
+}
+
+.coffee{
+    font-size: 1.2em;
+    font-weight: 600;
+}
+
+.email{
+    margin-right: 50px;
+    display: inline-block;
+}
+
+.otherLinks{
+    padding-top: 10px;
+}
+
+.otherLinks a{
+    margin-right: 10px;
+}
 
 
 /* COLUMNS */
@@ -332,13 +495,17 @@ footer{
 
 /* GRID */
 .items{
-        color: #f8f7fb;
+    min-height: 445px;
 }
-#item1 {background: #37BC9B;}
-#item2 {background: #DA4453;}
-#item3 {background: #F6BB42;}
-#item4 {background: #3BAFDA;}
-#item5 {background: #4A89DC;}
+#item1 {background: #004ea8;}
+#item2 {background: #ff596f; }
+#item1 p, #item2 p, #item3 p, #item4 p{color:rgba(255, 255, 255, 0.7);}
+#item1, #item2, #item3, #item4{color:rgba(255, 255, 255, 0.9);}
+#item3 {background: #f27259;}
+#item4 {background: #031f33;}
+#item5 {background: #ffffff;}
+#item5 p{color:rgba(85, 85, 85, 0.7);}
+#item5{color:rgba(85, 85, 85, 0.9);}
 #item6 {background: #E9573F;}
 #item7 {background: #434A54;}
 #item8 {background: #D770AD;}
@@ -346,6 +513,13 @@ footer{
 #item10 {background: #967ADC;}
 #item11 {background: #E6E9ED; color: #333;}
 #item12 {background: #AAB2BD; color: #333;}
+#item13 {background: #37BC9B; color: #333;}
+#item14 {background: #4287f5; color: #333;}
+#item15 {background: #4A89DC; color: #333;}
+#item16 {background: #fcba03; color: #333;}
+#item17 {background: #4A89DC; color: #333;}
+#item18 {background: rgb(81, 208, 212); color: #333;}
+
 
 
 
@@ -398,22 +572,26 @@ color: gold;
     height: 60px;
     margin-top: 2vh;
     z-index: 20; 
-    padding-left: 10vw;
-    padding-right: 10vw;
+    padding-left: 15vw;
+    padding-right: 15vw;
     margin-left: 0;
     z-index: 10;
     display: block;
     margin: auto;
-    position: fixed;
     transition: top 0.2s ease-in-out;
     width: 100%;
     background-color: white;
+    z-index: 1001;
+    position: relative;
+}
+
+#navbar.fixed{
+    position: fixed;
 }
 
 #navbar .logo{
     display: inline-block;
-    /* float: right;
-    z-index: 100; */
+    z-index: 100; 
     margin-left: 55vw;
 }
 
@@ -437,15 +615,11 @@ color: gold;
 }
 
 .submenu{
-    font-size: 20px;
+    font-size: 1em;
     padding: 13px 13px 13px 0px;
     text-decoration: none;
 }
-/* 
-.submenu:hover{
-    color: white;
-    text-decoration: none;
-} */
+
 
 #ham-container{
     /* position: fixed; */
@@ -485,6 +659,9 @@ color: gold;
     padding-top:100px;
 }
 
+.hamWCat{
+    color: white;
+}
 
 
 
@@ -532,6 +709,33 @@ color: gold;
         margin-top: 5vh;
         margin-bottom: 3vh;
     }
+
+    footer{
+        margin-right: 10vw;
+    }
+
+    .heroText{
+        margin-bottom: 10vh;
+        padding-left: 10vw;
+    }
+
+    .about-content{
+        margin-left: 10vw;
+        margin-right: 10vw;
+    }
+
+    #navbar{
+        padding-left: 10vw;
+        padding-right: 10vw;
+    }
+
+    .rachOut{
+        margin-left: 10vw;
+    }
+
+    .reachOut{
+        padding-left: 10vw;
+    }
 }
 
 
@@ -551,18 +755,55 @@ color: gold;
     }
     
     .heroText {
-        width: 65vw;
+        width: 54vw;
     }
 
     .big-text {
-        font-size: 2.7em;
+        font-size: 2.2em;
     }
     .secondBig-text {
         padding-bottom: 4vh;
-        font-size: 1.3em;
+        font-size: 2em;
     }
-    .items {
-        height: 60%;
+
+    .heroText .secondBig-text{
+        width: 40vw;
+    }
+
+    footer{
+        margin-right: 10vw;
+    }
+
+    .heroText{
+        margin-bottom: 10vh;
+        padding-left: 10vw;
+    }
+
+    .work-top3-content{
+        padding-left: 10vw;
+        padding-right: 10vw;
+    }
+
+    .about-content{
+        margin-left: 10vw;
+        margin-right: 10vw;
+    }
+
+    #navbar{
+        padding-left: 10vw;
+        padding-right: 10vw;
+    }
+
+    .rachOut{
+        margin-left: 10vw;
+    }
+
+    .reachOut{
+        padding-left: 10vw;
+    }
+
+    .workCat{
+        padding-left: 10vw;
     }
 
 }
@@ -586,14 +827,51 @@ color: gold;
     }
     
     .heroText {
-        width: 55vw;
+        width: 45vw;
+    }
+
+    .secHero .secondBig-text {
+        font-size: 1em;
+        width: 40vw;
     }
 
     .big-text {
-        font-size: 3em;
+        font-size: 2.4em;
     }
-    .items {
-        height: 60%;
+    footer{
+        margin-right: 10vw;
+    }
+
+    .heroText{
+        margin-bottom: 10vh;
+        padding-left: 10vw;
+    }
+
+    .work-top3-content{
+        padding-left: 10vw;
+        padding-right: 10vw;
+    }
+
+    .about-content{
+        margin-left: 10vw;
+        margin-right: 10vw;
+    }
+
+    #navbar{
+        padding-left: 10vw;
+        padding-right: 10vw;
+    }
+
+    .rachOut{
+        margin-left: 10vw;
+    }
+
+    .reachOut{
+        padding-left: 10vw;
+    }
+
+    .workCat{
+        padding-left: 10vw;
     }
 
 }
@@ -609,12 +887,48 @@ color: gold;
     }
 
     .secondBig-text {
-        font-size: 1.2em;
+        font-size: 2em;
         padding-bottom: 2vh;
     }
     #secMore {
         padding-top: 10vh;
         padding-bottom: 5vh;
+    }
+
+    footer{
+        margin-right: 10vw;
+    }
+
+    .heroText{
+        margin-bottom: 10vh;
+        padding-left: 10vw;
+    }
+
+    .work-top3-content{
+        padding-left: 10vw;
+        padding-right: 10vw;
+    }
+
+    .about-content{
+        margin-left: 10vw;
+        margin-right: 10vw;
+    }
+
+    #navbar{
+        padding-left: 10vw;
+        padding-right: 10vw;
+    }
+
+    .rachOut{
+        margin-left: 10vw;
+    }
+
+    .reachOut{
+        padding-left: 10vw;
+    }
+
+    .workCat{
+        padding-left: 10vw;
     }
 }
 
@@ -645,6 +959,11 @@ color: gold;
     }
     .items {
         height: 40%;
+    }
+
+    .w-top3-img{
+        width: 100%;
+        padding-left: 0;
     }
 }
 
@@ -694,6 +1013,7 @@ color: gold;
     }
     .w-top3-img {
         width: 100%;
+        padding-left: 0;
     }
 
     .about-emi{
@@ -707,7 +1027,14 @@ color: gold;
     .socialMedia .fa{
         float: right;
     }
-    
+
+    .reachOut .socialMedia{
+        padding-top: 0px;
+    }
+
+    .reachOut .socialMedia .fa {
+        float: left;
+    }
 
 } 
 

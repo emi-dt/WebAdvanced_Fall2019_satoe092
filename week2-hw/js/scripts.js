@@ -20,6 +20,8 @@ function submitQuiz() {
         return answerValue;
     }
 
+
+
 // calc score with answerScore function
     var calcScore = (answerScore('q1') + answerScore('q2') + answerScore('q3') + answerScore('q4'));
     console.log("CalcScore: " + calcScore); // it works!

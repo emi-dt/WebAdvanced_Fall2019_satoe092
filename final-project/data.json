@@ -1,40 +1,256 @@
 
 {"data":[
     {
-    "title":"Project 01",
+    "category":"UX-UI",
+    "title":"Royal Bank of Canada",
     "id": "item1",
     "content":{
         "cont-class":"project-cont-one",
-        "image":"./assets/images/placeholder.webp",
-        "url":"project1.html",
-        "parragraph":"Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illo commodi mollitia molestias asperiores praesentium laudantium. Eos totam incidunt eum consequatur dolorum, accusantium, saepe sequi unde veniam quis, praesentium cupiditate assumenda."
+        "image":"./assets/images/item1.png",
+        "url1":"mailto: emisato02@gmail.com",
+        "parragraph":"I have worked on multiple projects at the Innovation and Technology Division of RBC headquarters in Toronto. These included, developing internal products for the DevOps and Automation team and working on multiple PoC/PoT and MVP projects at the Innovation lab. This provided me with the opportunity to collaborate with the Cybersecurity, Blockchain and Voice technology team. Working with the Automotive finance team,  create invigorating customer-facing products. These projects exposed me to a multitude of different disciplines and shaped me into the kind of designer I am today. Due to confidentiality agreements, I am unable to disclose specific details about the projects here. Reach out to me to learn more about.",
+        "link1text":"Get in touch →",
+        "showOnHome":true
         }
 
     },
 
     {
-    "title":"Project 02",
+    "category":"UX-UI",
+    "title":"Caremap",
     "id": "item2",
     "content":{
         "cont-class":"project-cont-two",
-        "image":"./assets/images/placeholder.webp",
-        "url":"project2.html",
-        "parragraph":"Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illo commodi mollitia molestias asperiores praesentium laudantium. Eos totam incidunt eum consequatur dolorum, accusantium, saepe sequi unde veniam quis, praesentium cupiditate assumenda."
-    }
-
+        "image":"./assets/images/item2.png",
+        "url1":"mailto: emisato02@gmail.com",
+        "url2":"https://markets.businessinsider.com/news/stocks/are-canadians-notably-millennials-ready-to-care-for-growing-senior-population-1027394687",
+        "url3":"http://www.everythingzoomer.com/lifestyle/2018/06/17/in-home-care-app/",
+        "url4":"https://torontoguardian.com/2018/07/ucarenet-app/",
+        "parragraph":"Caremap is an iOS application. I was given the opportunity to work with uCarenet, an industry partner to rethink today’s in-house health care. I worked with two extremely passionate designers to research, ideate, design, and prototype our version of a connected community that bridges the gap between health providers and Canadian families. A full case study is available if you want to know more about! Feel free to get in touch with me.",
+        "link1text":"Request Case Study →",
+        "link2text":"Business Insiders",
+        "link3text":"Zoomer",
+        "link4text":"Toronto Gurdian",
+        "showOnHome":true
+        }
     },
 
     {
-    "title":"Project 03",
+    "category":"UX-UI",
+    "title":"GrowON",
     "id": "item3",
     "content":{
         "cont-class":"project-cont-three",
+        "image":"./assets/images/item3.png",
+        "url1":"growon-casestudy.html",
+        "parragraph":"Grow ON is about rejuvenating the organic farming industry in Ontario, Canada. This was my thesis project at George Brown and its final design deliverables were system design, packaging design, web development, and mobile app. GrowON’s strategy makes information about organic farming more accessible, approachable and attractive to younger generations. It is vital to sustaining our local food supply I ended up winning the first place 2017 overall thesis award.",
+        "link1text":"Full case study →",
+        "showOnHome":true
+        }
+    },
+
+    {
+    "category":"UX-UI",
+    "title":"FinSum Tokyo",
+    "id": "item4",
+    "content":{
+        "cont-class":"project-cont-four",
+        "image":"./assets/images/item4.png",
+        "parragraph":"FIN/SUM is a Fintech summit and conference that connects the global finance and tech industries while promoting disruptive innovation across the globe. I had a privilege to work with Nikkei (Nihon Keizai Shimbun) and Japanese Government Financial Services Agency to launch FinSum as a design lead and established a digital design system, conducted UX research and designed a website working with global multidisciplinary team members. The website and all communication design successfully led to over 2,000 visitors. Since its original conference in 2016, It grew to be the largest and most influential fintech summit in Japan and one of the largest in Asia and globally."
+        }
+    },
+
+    {
+    "category":"UX-UI",
+    "title":"DreamyDragon",
+    "id": "item5",
+    "content":{
+        "cont-class":"project-cont-five",
+        "image":"./assets/images/item5.png",
+        "url1":"https://www.behance.net/gallery/46812511/Dreamy-Dragon-Mobile-App",
+        "parragraph":"Dreamy Dragon is a story sharing community application. Users can read stories anytime and anywhere they want for free. Storytelling is an art that gets passed down from generation to generation. Everyone can relate or learn from stories. More stories are read digitally these days, and storytelling with children should also follow the technological trend, where Dreamy Dragon was introduced.",
+        "link1text":"View more →"
+        }
+    },
+
+    {
+    "category":"GD",
+    "title":"CINDERBLOC",
+    "id": "item6",
+    "content":{
+        "cont-class":"project-cont-six",
         "image":"./assets/images/placeholder.webp",
-        "url":"project3.html",
-        "parragraph":"Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illo commodi mollitia molestias asperiores praesentium laudantium. Eos totam incidunt eum consequatur dolorum, accusantium, saepe sequi unde veniam quis, praesentium cupiditate assumenda."
+        "url1":"mailto: emisato02@gmail.com",
+        "parragraph":"I did an internship at CINDERBLOC, an award-winning branding, and design agency based in Toronto while I was at George Brown. I have learned true craftmanship and how to build up an effective visual strategy appropriate design solutions that resonate well with clients' audiences and generates a positive impact on your business. After my internship has ended, I have worked on multiple projects with them. Due to NDA, I am unable to disclose any details about the projects, however, if you are interested in learning more, please feel free to contact me to learn more about.",
+        "link1text":"Get in touch →"
+        }
+    },
+
+    {
+    "category":"GD",
+    "title":"Elephant Space",
+    "id": "item7",
+    "content":{
+        "cont-class":"project-cont-seven",
+        "image":"./assets/images/placeholder.webp",
+        "url1":"https://www.behance.net/gallery/46636313/Elephant-Space-Safe-Space-for-Youth-Branding",
+        "parragraph":"Elephant Space is a non-profit organization that offers an after-school program to provide a safe space for youth ages 12-14. I designed an entire visual branding system including logo and was in charge of producing promotional items such as postcards, T-shirts, and posters. Promotional items were used for pitch contests, partnership meetings, and brand awareness.",
+        "link1text":"View more →"
+        }
+    },
+
+    {
+    "category":"GD",
+    "title":"FAD",
+    "id": "item8",
+    "content":{
+        "cont-class":"project-cont-eight",
+        "image":"./assets/images/placeholder.webp",
+        "url1":"https://www.behance.net/gallery/32737123/Backpack-Carrier",
+        "url2":"https://www.dadway-onlineshop.com/pet_brand/fad/",
+        "parragraph":"DADWAY is a distributor of baby and pet items from North America and Europe into the Japanese market. I was able to produce digital and print marketing collateral. Later, I became a lead product designer on DADWAY’s original brand, FAD and FAD+. In 2016’s original launch, I have led the entire branding and produced a variety of tangible products including packable beds, backpack carriers, and cat scratchers, and was featured by Adobe on Behance.",
+        "link1text":"View more →",
+        "link2text":"FAD online shopping →"
+        }
+    },
+
+    {
+    "category":"GD",
+    "title":"Their Home Fill Yours",
+    "id": "item9",
+    "content":{
+        "cont-class":"project-cont-nine",
+        "image":"./assets/images/placeholder.webp",
+        "url1":"https://www.behance.net/gallery/44384161/Their-Home-Fill-YoursStop-Deforestation",
+        "parragraph":"Their Home Fill Yours is my personal social campaign to raise awareness amongst people in their mid to late 20s and following generations who will be most affected by deforestation. The design challenge was to find a way to trigger curiosity and have people proactively seek out what the main causes and effects of deforestation are where I photo-merging endangered animals with products created on the cleared lands in order to provoke intrigue.", 
+        "link1text":"View more →"
+        }
+    },
+    
+    {
+    "category":"GD",
+    "title":"Annual Report",
+    "id": "item10",
+    "content":{
+        "cont-class":"project-cont-ten",
+        "image":"./assets/images/placeholder.webp",
+        "parragraph":"World Wildlife Fund (WWF) is Canada’s largest international conservation organization with the active support of more than 150,000 Canadians. An annual report is a legally required financial document and also a valuable marketing tool to reach a large receptive audience. Big impactful images with 7:3 ratios of pictures and texts were adapted to break new ground, be inviting and intriguing. It also promotes an honest and favorable image of WWF."
+        }
+    },
+
+    {
+    "category":"GD",
+    "title":"hmp",
+    "id": "item11",
+    "content":{
+        "cont-class":"project-cont-eleven",
+        "image":"./assets/images/placeholder.webp",
+        "url1":"https://www.behance.net/gallery/45942081/hmp-Organic-Skincare",
+        "parragraph":"hmp inc. is a Canadian skincare brand that values the potential and benefits that organic hemp seeds. The classical and sophisticated design approach was used to cater to hemp products that have been generally catered towards a younger hip group and appeal to a higher end audience. As “organic” and “natural” become ever more popular, there are countless products labeled organic but not to be true to consumer. A crossing line “NO” is adapted throughout the entire brand system to differentiate hmp from these other too-good-to-be-true products.",
+        "link1text":"Read more →"
+        }
+    },
+
+    {
+    "category":"GD",
+    "title":"Stag Beetle",
+    "id": "item12",
+    "content":{
+        "cont-class":"project-cont-twelve",
+        "image":"./assets/images/placeholder.webp",
+        "url1":"https://www.behance.net/gallery/43952573/Stag-Beetle-Brew",
+        "parragraph":"Stag Beetle is a beer brewed in North-western Ontario. The horns of a Stag Beetle are representative of its hierarchical status, as well as a weapon in a battle for food, and a symbol of sexuality in mating season. Inspired by Art Deco, geometric lines are applied to the overall design and a traditional design solution was chosen to better engage the target audience while integrating corporate branding to form a cohesive approach to packaging.",
+        "link1text":"Read more →",
+        "link2text":""
+        }
+    },
+
+    {
+    "category":"GD",
+    "title":"Pearl Crescent Tea",
+    "id": "item13",
+    "content":{
+        "cont-class":"project-cont-thirteen",
+        "image":"./assets/images/placeholder.webp",
+        "url1":"https://www.behance.net/gallery/32229281/Pearl-Crescent-Tea",
+        "parragraph":"Pearl Crescent Tea is a café and tearoom inspired by old world tea houses. The true heart behind the brand identity is to offer an extraordinary experience apart from their busy daily life, where I came up with the positioning statement “Let time stop here”. Inspired by the Arts and Crafts Movements and Art Nouveau style, I have created a series of brand visual imageries to express elegant, transitional yet playful tone combined with stylish craftsmanship which takes guests back in time.",
+        "link1text":"View more →"
+        }
+    },
+
+    {
+    "category":"GD",
+    "title":"Be a Hero",
+    "id": "item14",
+    "content":{
+        "cont-class":"project-cont-fourteen",
+        "image":"./assets/images/placeholder.webp",
+        "url1":"https://www.behance.net/gallery/32284093/Be-A-Hero-OOH-Ad",
+        "parragraph":"Out Of Home advertising for Canadian Blood Services. Canadian Blood Services is a non-profit, charitable organization whose sole mission is to manage the blood supply for Canadians, especially for those in need. There is a shortage of blood at the blood bank, where I came up with the concept, “Be a Hero” to inspire and encourage younger demographic who are less likely to donate, to take action.",
+        "link1text":"View more →"
+        }
+    },
+
+    {
+    "category":"TP",
+    "title":"Cat Scratcher",
+    "id": "item15",
+    "content":{
+        "cont-class":"project-cont-fifteen",
+        "image":"./assets/images/placeholder.webp",
+        "url1":"https://www.behance.net/gallery/32756203/Cat-Scratcher",
+        "url2":"https://www.dadway-onlineshop.com/pet_brand/fadplus/?rpp=all",
+        "parragraph":"Grow ON is about rejuvenating the organic farming industry in Ontario, Canada. This was my thesis project at George Brown and its final design deliverables were system design, packaging design, web development and mobile app. GrowON’s strategy makes information about organic farming more accessible, approachable and attractive to younger generations. It is vital to sustaining our local food supply I ended up winning the first place 2017 overall thesis award. View a full case study here → ",
+        "link1text":"View more →",
+        "link2text":"FAD online shopping →"
+        }
+    },
+
+    {
+    "category":"TP",
+    "title":"Packable Bed",
+    "id": "item16",
+    "content":{
+        "cont-class":"project-cont-sixteen",
+        "image":"./assets/images/placeholder.webp",
+        "url1":"https://www.behance.net/gallery/32711581/Packable-Bed",
+        "url2":"https://www.dadway-onlineshop.com/pet_brand/fadplus/?rpp=all",
+        "parragraph":"Packable bed can be used both indoor and outdoor perfect for travel and camping allowing pet owners to spend valuable time with their pet. The biggest challenges were to find the perfect materials to meet both affordability and convenient functionalities. We tested multiple different materials seeking for the perfect waterproof, windproof and snow specifications. Packable bed became one of the top selling product in Japanese pet product market in the following year.",
+        "link1text":"View more →",
+        "link2text":"FAD online shopping →"
+        }
+    },
+
+    {
+    "category":"TP",
+    "title":"Backpack Carrier",
+    "id": "item17",
+    "content":{
+        "cont-class":"project-cont-seventeen",
+        "image":"./assets/images/placeholder.webp",
+        "url1":"https://www.behance.net/gallery/32737123/Backpack-Carrier",
+        "url2":"https://www.dadway-onlineshop.com/pet_brand/fadplus/?rpp=all",
+        "parragraph":"Backpack career was designed to carry small dogs and cats especially suitable for bikers. The product ideas were inspired by my own experiences with my beloved two cats a dog. A light weighted artificial leather adds high end and stylish look while keeping it highly functional such as large zipped mesh window let a cat/dog to breeze and provides comfort.",
+        "link1text":"View more →",
+        "link2text":"FAD online shopping →"
+        }
+    },
+
+    {
+    "category":"TP",
+    "title":"LANCO Toys — Eggs Collection",
+    "id": "item18",
+    "content":{
+        "cont-class":"project-cont-eighteen",
+        "image":"./assets/images/placeholder.webp",
+        "url1":"https://www.dadway-onlineshop.com/pet_brand/lanco/",
+        "parragraph":"Backpack career was designed to carry small dogs and cats especially suitable for bikers. The product ideas were inspired by my own experiences with my beloved two cats a dog. A light weighted artificial leather adds high end and stylish look while keeping it highly functional such as large zipped mesh window let a cat/dog to breeze and provides comfort.",
+        "link1text":"LANCO x DADWAY Toys →"
+        }
     }
 
-    }
+    
+
     ]
 }
 

@@ -1,0 +1,15 @@
+
+
+{
+	"people": [
+	{	"firstName":"Emi",
+		"lastName":"Sato",
+		"faveAnimal":"Cats"	},
+	{	"firstName":"Karla",
+		"lastName":"Polo",
+		"faveAnimal":"Dogs"	},
+	{	"firstName":"Jason",
+		"lastName":"Smith",
+		"faveAnimal":"Birds"	}
+    ]
+}

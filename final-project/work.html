@@ -1,0 +1,104 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="assets/css/style.css">
+
+
+    <!-- Font -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://use.typekit.net/vyx0ngl.css">
+
+    <!-- JS -->
+	<script type="text/javascript" src="assets/js/main.js"></script>
+	<script type="text/javascript" src="assets/js/jquery-3.4.1.min.js"></script>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+    <!-- Handlebars -->
+    <script type='text/javascript' src='assets/js/handlebars.js'></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.3.1/handlebars.min.js"></script>
+
+</head>
+<body>
+ 
+    
+    
+
+    <div id="ham-container">
+        <div id="mySideNav" class="sideNav">
+            <span id="closeIcon" onclick="closeNav()">&times;</span>
+            <li><a class="submenu a-underline link1" href="index.html#about" tabindex="1">About</a></li>
+            <li><a class="submenu a-underline link2" href="work.html" tabindex="1">Work</a></li>
+            <div class="workCat">
+                <li class="a-noLine hamWCat" data-id="linkUX" onclick="closeNav()">UX/UI</li>
+                <li class="a-noLine hamWCat" data-id="linkGD" onclick="closeNav()">Graphic Design</li>
+                <li class="a-noLine hamWCat" data-id="linkTP" onclick="closeNav()">Tangible Product</li>
+            </div>
+        </div>
+
+        <span class="hamberguer" onclick="openNav()">&#9776;</span>
+        <div class="logo"><a href="index.html"><img src="/assets/images/free-wizard-glasses.svg"></a></div>   
+    </div>
+
+
+    <div id="navbar" class="workNav"> 
+            <li><a class="submenu a-underline link1" href="index.html#about" tabindex="1">About</a></li>
+            <li><a class="submenu a-underline link2" href="work.html" tabindex="1">Work</a></li>  
+            <li class="logo"><a href="index.html"><img src="/assets/images/free-wizard-glasses.svg"> </a></li> 
+            <div class="workCat">
+                <li class="a-noLine active" data-id="linkUX">UX/UI</li>
+                <li class="a-noLine" data-id="linkGD">Graphic Design</li>
+                <li class="a-noLine" data-id="linkTP">Tangible Product</li>
+            </div>
+        </div>
+    
+    <div class="main-contianer">
+       <div id="work-top3">
+            <script id="work-template" type="x-handlebars-template">​
+            {{#each data}}
+            
+                <div id="{{id}}" class="items {{category}}">
+                    <div class="work-top3-content {{content.cont-class}}"> 
+                        <div class="col2">
+                            <h2 class="secondBig-text">{{title}}</h2>
+                            <p>{{content.parragraph}}</p>
+                            <a class="a-underline" href="{{content.url}}">Read more →</a>
+                        </div>
+                        <div class="col2">
+                            <img class="w-top3-img" src="{{content.image}}" alt="placeholder">
+                            </div>
+                    </div>
+                </div>
+           
+            {{/each}}
+            </script> 
+        </div>
+
+
+        
+    <!-- copyright symbol -->
+    <footer>
+        <div class="reachOut">
+                <p class="coffee">Coffee chat?</p><br/>
+                <div class="col2 socialMedia">
+                    <p class="email">emisato02@gmail.com</p>
+                    <!-- Icon from fontawesome    https://www.w3schools.com/icons/fontawesome_icons_brand.asp -->
+                    <a href="https://www.behance.net/EmiSato" class="fa fa-behance socialbtns" target="_blank"></a>
+                    <a href="https://www.linkedin.com/in/emi-s-542518174/" class="fa fa-linkedin socialbtns" target="_blank"></a>
+                </div>
+        </div>
+    
+        <div class="copyright">&copy; Emi Sato 2019</div>
+    </footer>  
+
+    </div> 
+
+</body> 
+</html>
