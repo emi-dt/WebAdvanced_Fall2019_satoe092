@@ -1,0 +1,50 @@
+a{
+    text-decoration: none;
+}
+
+.SearchResults{
+    width: 75%;
+    margin: auto;
+    /* background: #90ee9075; */
+    height: 1000px;
+    margin-top: 130px;
+    text-align: left;
+    margin-left: 22%;
+    padding:0px 16px;
+}
+
+.results-number{
+    font-size: 14px;
+    color: #70757A;
+    padding:0px 8px 0px 0px;
+}
+
+.results{
+    list-style: none;
+    padding:0;
+}
+
+.results li{
+    padding-bottom: 27px;
+}
+
+.result-title{
+    color: #1A0DAB;
+    font-size: 20px;
+    padding:0px;
+    margin:0;
+    font-weight: medium;
+}
+
+.result-link{
+    color: #006621;
+    font-size: 12px;
+    padding:1px 0px 0px;
+    margin:0;
+}
+
+.result-description{
+    color: #545454;
+    font-size: 14px;
+    margin:0;
+}

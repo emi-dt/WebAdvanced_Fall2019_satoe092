@@ -1,0 +1,9 @@
+.Plugin{
+    background-color: #48d1cc7d;
+    width: 400px;
+    height: 400px;
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    z-index: 10;
+}

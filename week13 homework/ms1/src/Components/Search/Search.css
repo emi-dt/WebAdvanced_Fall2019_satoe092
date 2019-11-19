@@ -1,0 +1,23 @@
+.Search{
+    width: 50%;
+    height: 500px;
+    margin:auto;
+    margin-top: 80px;
+    text-align: center;
+    
+}
+
+#LogoCenter{
+    width: 60%;
+    padding: 109px 0px 30px;
+}
+
+#main-search-bar{
+    width: 484px;
+    height: 46px;
+    border-radius: 25px;
+    border: 1px solid #ebebeb;
+    height: 44px;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+}
