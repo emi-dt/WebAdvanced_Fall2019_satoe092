@@ -3,10 +3,10 @@
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<title>The Aviator: The Game | Codrops</title>
-		<meta name="description" content="Demo of the game: The Making of 'The Aviator': Animating a Basic 3D Scene with Three.js" />
-		<meta name="keywords" content="three.js, webgl, tutorial, game, 3d, animation, airplane, web development, javascript" />
-		<meta name="author" content="Karim Maaloul for Codrops" />
+		<title>The Handy Arrow↑↓ | The game powered by AI image recognition</title>
+		<meta name="description" content="The Handy Arrow is a plane game controled by webcam image using pretrained neural network models." />
+		<meta name="keywords" content="three.js, webgl , game, 3d, animation, airplane, web development, javascript, teachablemachine, AI, Machine learning by Google" />
+		<meta name="author" content="Emi Sato" />
 
 		<link rel="shortcut icon" href="favicon.ico">
 
@@ -24,15 +24,15 @@
 		  <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 		<![endif]-->
 	</head>
+
+
 	<body>
-
-
 		<div class="introduction">
 			<div class="intro-content">
 				<a class="logo" href="index.html" ><h1> The Handy<br> Arrow↑↓ </h1></a>
 				<p class="brief-description">
 					<!-- <span class="welcome">Welcome!</span></br> -->
-					The Handy Arrow is a plane game controled by webcam image using pretrained neural network models. 
+					The plane game controled by webcam image<br> using pretrained neural network models. 
 				</p>
 				
 				<div class="character-holder" id="character-holder">
@@ -42,70 +42,29 @@
 
 				<div class="instruction">
 					<div class="step1">
-						<img src="./img/placeholder-image.png" alt="Draw an arrow">
 						<p><span class="number">1. </span>Draw an arrow on a paper</p>
+						<img src="./img/draw-an-arrow.gif" alt="Draw an arrow">
+						<!-- original image from here https://www.maxpixels.net/Portfolio-Mockup-Paper-Paint-Flatlay-Picture-3684376 -->
+
 					</div>
 					<div class="step2">
-						<img src="./img/placeholder-image.png" alt="Use an arrow as your controller">
-						<p><span class="number">2. </span>Use an arrow to control the airplane</p>
+							<p><span class="number">2. </span>Use an arrow to control the airplane!</p>
+						<img src="./img/move-an-arrow.gif" alt="Use an arrow as your controller">
 					</div>
 				</div>
-				<a class="start-btn">Let's play!</a>
-				
+				<a class="start-btn" href="game.html">Let's play!</a>				
 			</div>
-		</div>
 
-		
-
-		<div class="game-holder" id="gameHolder">
-			<div class="header">
-				<div class="score" id="score">
-					<div class="score__content" id="level">
-						<div class="score__label">level</div>
-						<div class="score__value score__value--level" id="levelValue">1</div>
-						<svg class="level-circle" id="levelCircle" viewbox="0 0 200 200">
-							<circle id="levelCircleBgr" r="80" cx="100" cy="100" fill="none" stroke="#d1b790" stroke-width="24px" />
-							<circle id="levelCircleStroke" r="80" cx="100" cy="100" fill="none" #f25346 stroke="#68c3c0" stroke-width="14px" stroke-dasharray="502" />
-						</svg>
-					</div>
-					<div class="score__content" id="dist">
-						<div class="score__label">distance</div>
-						<div class="score__value score__value--dist" id="distValue">000</div>
-					</div>
-					<div class="score__content" id="energy">
-						<div class="score__label">energy</div>
-						<div class="score__value score__value--energy" id="energyValue">
-							<div class="energy-bar" id="energyBar"></div>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="world" id="world"></div>
-			
-			<div class="message message--replay" id="replayMessage">
-				<!-- <div class="score__content" id="level">
-					<div class="score__label">Your Score Level</div>
-					<div class="score__value score__value--level" id="levelValue">1</div>
-				</div> -->
-				<p class="playAgainBtn">Play again!</p>
-			</div>
-			<footer>
-				<div class="left">
-					<a class="logo" href="index.html" ><h1> THe Handy<br> Arrow↑↓ </h1></a>
-					<!-- <h2>Plane game controled by webcam image using pretrained neural network models</h2> -->
-				</div>
-				<div class="right">
-					<div class="message--instructions" id="instructions">
+			<div class="right copyright">
+					<div class="message--instructions">
 						<ul>
-						<li id="emi"><a href="https://emi-sato.com/" target="blank">EMI</a></li>
-						<li id="credits">Powered by <a target="blank" href="https://tympanus.net/codrops/2016/04/26/the-aviator-animating-basic-3d-scene-threejs/">The Aviator</a> & <br><a target="blank" href="https://teachablemachine.withgoogle.com/">Teachable Machine</a> by Google</li>
+						<li class="emi"><a href="https://emi-sato.com/" target="blank">EMI</a></li>
+						<li class="credits">Powered by <a target="blank" href="https://tympanus.net/codrops/2016/04/26/the-aviator-animating-basic-3d-scene-threejs/">The Aviator</a> & <br><a target="blank" href="https://teachablemachine.withgoogle.com/">Teachable Machine</a> by Google</li>
 						</ul>
 					</div>
-				</div>
-			</footer>
+			</div>
+
 		</div>
-		
-		
-		
+	
 	</body>
 </html>

@@ -1,4 +1,3 @@
-
 var Colors = {
 	red:0xf25346,
 	white:0xd8d0d1,
@@ -471,6 +470,3 @@ function createPlane(){
 	airplane.mesh.position.y = 100;
 	scene.add(airplane.mesh);
 }
-
-
-
