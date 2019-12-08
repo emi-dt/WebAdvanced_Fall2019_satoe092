@@ -18,8 +18,8 @@
 		<link rel="stylesheet" type="text/css" href="css/game.css" />
 		<script type="text/javascript" src="js/TweenMax.min.js"></script>
 		<script type="text/javascript" src="js/three.min.js"></script>
-		<script type="text/javascript" src="js/game.js" ></script>
-		<!-- <script type="text/javascript" src="js/character.js" ></script> -->
+		<!-- <script type="text/javascript" src="js/game.js" ></script> -->
+		<script type="text/javascript" src="js/character.js" ></script>
 		<!--[if IE]>
 		  <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 		<![endif]-->
@@ -35,15 +35,18 @@
 					The Handy Arrow is a plane game controled by webcam image using pretrained neural network models. 
 				</p>
 				
-				<div class="character-holder" id="character-holder"></div>
+				<div class="character-holder" id="character-holder">
+					<div class="character-world" id="character-world"></div>
+				</div>
+				
 
 				<div class="instruction">
 					<div class="step1">
-						<img src="/img/placeholder-image.png" alt="Draw an arrow">
+						<img src="./img/placeholder-image.png" alt="Draw an arrow">
 						<p><span class="number">1. </span>Draw an arrow on a paper</p>
 					</div>
 					<div class="step2">
-						<img src="/img/placeholder-image.png" alt="Use an arrow as your controller">
+						<img src="./img/placeholder-image.png" alt="Use an arrow as your controller">
 						<p><span class="number">2. </span>Use an arrow to control the airplane</p>
 					</div>
 				</div>

@@ -35,11 +35,18 @@
 	font-size: 40px;
 }
 
-#character-holder {
+.character-holder {
 	width: 130px;
     height: 100px;
     overflow: hidden;
     background-color: lightblue;
+	margin: auto;
+}
+
+.character-world {
+	width: 130px;
+    height: 100px;
+	overflow: hidden;
 	margin: auto;
 }
 
