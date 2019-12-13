@@ -1,0 +1,104 @@
+
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>The Handy Arrow↑↓ | The game powered by AI image recognition</title>
+        <meta name="description" content="The Handy Arrow is a plane game controled by webcam image using pretrained neural network models."/>
+        <meta name="keywords" content="three.js, webgl , game, 3d, animation, airplane, web development, javascript, teachablemachine, AI, Machine learning by Google" />
+        <meta name="author" content="Emi Sato" />
+
+        <link rel="shortcut icon" href="favicon.ico">
+
+        <link href='https://fonts.googleapis.com/css?family=Playfair+Display:400,700,700italic' rel='stylesheet' type='text/css'>
+        <link href="https://fonts.googleapis.com/css?family=Sedgwick+Ave&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Shadows+Into+Light&display=swap" rel="stylesheet">
+
+        <link rel="stylesheet" type="text/css" href="css/demo.css" />
+        <link rel="stylesheet" type="text/css" href="css/game.css" />
+        <script type="text/javascript" src="js/TweenMax.min.js"></script>
+        <script type="text/javascript" src="js/three.min.js"></script>
+        <script type="text/javascript" src="js/game.js" ></script>
+        <script type="text/javascript" src="js/countdown.js"></script>
+
+        <!--[if IE]>
+            <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->
+    </head>
+
+
+    <body>
+
+            <div class="countdown-page">
+                <ul class="catch-instruction">
+                    <li class="avoid-this">Avoid<img src="./img/avoid.svg"></li>
+                    <li class="catch-this">Catch<img src="./img/catch.svg"></li>
+                </ul>
+                <div id="countdown"></div>
+            </div>
+
+        
+        <div class="game-holder" id="gameHolder">
+            <div class="header">
+                <div class="score" id="score">
+                    <div class="score__content" id="level">
+                        <div class="score__label">level</div>
+                        <div class="score__value score__value--level" id="levelValue">1</div>
+                        <svg class="level-circle" id="levelCircle" viewbox="0 0 200 200">
+                            <circle id="levelCircleBgr" r="80" cx="100" cy="100" fill="none" stroke="#d1b790" stroke-width="24px" />
+                            <circle id="levelCircleStroke" r="80" cx="100" cy="100" fill="none" #f25346 stroke="#68c3c0" stroke-width="14px" stroke-dasharray="502" />
+                        </svg>
+                    </div>
+                    <div class="score__content" id="dist">
+                        <div class="score__label">distance</div>
+                        <div class="score__value score__value--dist" id="distValue">000</div>
+                    </div>
+                    <div class="score__content" id="energy">
+                        <div class="score__label">energy</div>
+                        <div class="score__value score__value--energy" id="energyValue">
+                            <div class="energy-bar" id="energyBar"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="world" id="world"></div>
+            
+            <div class="message message--replay" id="replayMessage">
+                <!-- <div class="score__content" id="level">
+                    <div class="score__label">Your Score Level</div>
+                    <div class="score__value score__value--level" id="levelValue">1</div>
+                </div> -->
+                <p class="playAgainBtn">Play again!</p>
+            </div>
+            
+            <footer>
+                <div class="left">
+                    <a class="logo" href="index.html" ><h1> THe Handy<br> Arrow↑↓ </h1></a>
+                    <!-- <h2>Plane game controled by webcam image using pretrained neural network models</h2> -->
+                </div>
+
+                <!-- <div class="right">
+                    <div class="message--instructions" id="instructions">
+                        <ul>
+                        <li class="emi"><a href="https://emi-sato.com/" target="blank">EMI</a></li>
+                        <li class="credits">Powered by <a target="blank" href="https://tympanus.net/codrops/2016/04/26/the-aviator-animating-basic-3d-scene-threejs/">The Aviator</a> & <br><a target="blank" href="https://teachablemachine.withgoogle.com/">Teachable Machine</a> by Google</li>
+                        </ul>
+                    </div>
+                </div> -->
+
+                <div class="middle">
+                    <!-- <p>Catch <span class="triangle"></span> & Avoid <span class="circle"></span> </p> -->
+                </div>
+            </footer>
+        </div>
+
+
+
+        <!-- My Model: Teachable Machine Learning by Google -->
+        <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@1.3.1/dist/tf.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@teachablemachine/image@0.8/dist/teachablemachine-image.min.js"></script>
+
+
+    </body>
+</html>
